@@ -24,10 +24,130 @@
                 <li class="List">Stores</li>
                 <li class="List">Shoes</li>
                 <li class="List">About</li>
-                <li>Contact Us</li>
+                <li class="List">Contact Us</li>
             </div>
 
         </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="img1-modified.png" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>CHOWHIDE STANDARD CREW</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="img" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>RECON MARINE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="img2-modified.png" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>SEVEN NATION SALAMI</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div style="text-align:center; margin-top:-25px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-sm-2 " style=" width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="sh.jpg" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED SHOES</h2>
+
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 " style="border-left:1px solid rgb(204, 201, 201); width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="img1-modified.png" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED T-SHIRTS</h2>
+
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 " style="border-left:1px solid rgb(204, 201, 201); width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="SO.jpg" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED SHORTS</h2>
+
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-12" style="background-color: rgb(40, 168, 168);color:white;">
+            <h1 style="padding:16px; margin-left: 100px;">
+                FEATURED PRODUCT
+            </h1>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+
     </div>
 </body>
 
