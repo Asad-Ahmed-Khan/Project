@@ -5,136 +5,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-
-    <link rel="link-type" href="style.css">
-    <script language="javascript"></script>
-
-    <script src="script.js"></script>
-    <style>
-        * {
-            padding: 0;
-            margin: 5px;
-            text-align: center;
-        }
-        
-        body {
-            background-color: blue;
-        }
-        
-        .calculator {
-            width: 350px;
-            height: 320px;
-            background-color: #c0c0c0;
-            box-shadow: 0px 0px 0px 10px #666;
-            border: 5px solid black;
-            border-radius: 10px;
-        }
-        
-        #display {
-            width: 320px;
-            height: 40px;
-            text-align: right;
-            background-color: black;
-            border: 3px solid white;
-            font-size: 18px;
-            left: 2px;
-            top: 2px;
-            color: #7fff00;
-        }
-        
-        .btnTop {
-            color: white;
-            background-color: #6f6f6f;
-            font-size: 14px;
-            margin: auto;
-            width: 50px;
-            height: 25px;
-        }
-        
-        .btnNum {
-            color: white;
-            background-color: black;
-            font-size: 14px;
-            margin: auto;
-            width: 50px;
-            height: 25px;
-        }
-        
-        form {
-            margin-left: 500px;
-            margin-top: 5%;
-        }
-        
-        .btnMath {
-            color: white;
-            background-color: #ff4561;
-            font-size: 14px;
-            margin: auto;
-            width: 50px;
-            height: 25px;
-        }
-        
-        .btnOpps {
-            color: white;
-            background-color: #ff9933;
-            font-size: 14px;
-            margin: auto;
-            width: 50px;
-            height: 25px;
-        }
-    </style>
 </head>
 
 <body>
-    <form name="sci-calc">
-        <table class="calculator" cellspacing="0" cellpadding="1">
-            <tr>
-                <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
-            </tr>
-            <tr>
-                <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 "></td>
-                <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)"></td>
-                <td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
-                <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')"></td>
-                <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)"></td>
-            </tr>
-            <tr>
-                <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
-                <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')"></td>
-                <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')"></td>
-                <td><input type="button" class="btnOpps" name="btnOpps" value="x&#94;" onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
-                <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')"></td>
-                <tr>
-                    <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')"></td>
-                    <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')"></td>
-                    <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')"></td>
-                    <td><input type="button" class="btnOpps" name="btnOpps" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')"></td>
-                    <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')"></td>
-                    <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')"></td>
-                    <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)"></td>
-                    <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="&#46;" onclick="addChar(this.form.display, '&#46;')"></td>
-                    <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="cos" onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="sin" onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
-                    <td><input type="button" class="btnMath" name="btnMath" value="tan" onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
-                </tr>
-                </tabel>
-    </form>
+    <div>
+        <button id="trigger" class="forms" type="button">a</button>
+    </div>
+    <div>
+        <button id="trigger1" class="forms" type="button">b</button>
+    </div>
+    <div>
+        <button id="trigger2" class="forms" type="button">c</button>
+    </div>
+    <div>
+        <button id="trigger3" class="forms" type="button">d</button>
+    </div>
+    <div>
+        <button id="trigger4" class="forms" type="button">e</button>
+    </div>
+    <div>
+        <button id="trigger5" class="forms" type="button">f</button>
+    </div>
+    <div class="back">
+        <div class="shoes">
+            <button class="close">&times;</button>
+
+            <div>
+                <img src="bra.png" style="width: 350px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded Shoes</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$65.00</b></p>
+                <p><b>NIKE's</b> athletic footwear products are designed primarily for specific athletic use, although a large percentage of the products are worn for casual or leisure purposes. We place considerable emphasis on high quality construction
+                    and innovative design for men, women and children</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="back1">
+        <div class="beg">
+            <button class="close1">&times;</button>
+
+            <div>
+                <img src="b.jpg" style="width: 350px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded Beg</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$44.00</b></p>
+                <p><b>Stylo's</b> A handbag is a small bag which a woman uses to carry things such as her money and keys in when she goes out.</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="back2">
+        <div class="watch">
+            <button class="close2">&times;</button>
+
+            <div>
+                <img src="watch.png" style="width: 350px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded Watch</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$250.00</b></p>
+                <p><b>Armani's</b> Watches from the Emporio Armani men's collection are the perfect embodiment of the brand's carefree, refined style..</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="back3">
+        <div class="sandal">
+            <button class="close3">&times;</button>
+
+            <div>
+                <img src="sen.png" style="width: 350px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded Sandals</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$250.00</b></p>
+                <p><b>Sandals's</b> Sandals are open or closed-toed strappy shoes worn by women.</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="back4">
+        <div class="shirt">
+            <button class="close4">&times;</button>
+
+            <div>
+                <img src="shirt" style="width: 300px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded T-Shirt</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$80.00</b></p>
+                <p><b>Marine's</b>marine recon t shirt selection for the very best in unique or custom, handmade pieces from our shops.</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="back5">
+        <div class="short">
+            <button class="close5">&times;</button>
+
+            <div>
+                <img src="short.jpg" style="width: 300px;" alt="sozes">
+            </div>
+            <div class="crd">
+                <h1>Branded T-Shirt</h1>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p><b>$50.00</b></p>
+                <p><b>Levi's</b> Tailored with just the right amount of stretch for easy movement, you'll be free to move across any dance floor.</p>
+                <button class="but" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

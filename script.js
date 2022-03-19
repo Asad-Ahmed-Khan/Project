@@ -1,75 +1,217 @@
-function addChar(input, character) {
-	if(input.value == null || input.value == "0")
-		input.value = character
-	else
-		input.value += character
+const trigger = document.querySelector('#trigger');
+
+const back = document.querySelector('.back');
+
+const closeBtn = document.querySelector('.close');
+
+
+trigger.addEventListener('click', function() {
+    openModal();
+})
+
+closeBtn.addEventListener('click', function() {
+    closeModal();
+})
+
+
+back.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+
+    }
+
+})
+
+function openModal() {
+    back.classList.add('active');
 }
 
-function cos(form) {
-	form.display.value = Math.cos(form.display.value);
+
+function closeModal() {
+    back.classList.remove('active');
+}
+// ----------------------------------
+const trigger1 = document.querySelector('#trigger1');
+
+const back1 = document.querySelector('.back1');
+
+const closeBtn1 = document.querySelector('.close1');
+
+
+trigger1.addEventListener('click', function() {
+    openModal1();
+})
+
+closeBtn1.addEventListener('click', function() {
+    closeModal1();
+})
+back1.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal1();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal1();
+
+    }
+
+})
+
+function openModal1() {
+    back1.classList.add('active');
 }
 
-function sin(form) {
-	form.display.value = Math.sin(form.display.value);
+
+function closeModal1() {
+    back1.classList.remove('active');
+}
+// ----------------------------------
+const trigger2 = document.querySelector('#trigger2');
+
+const back2 = document.querySelector('.back2');
+
+const closeBtn2 = document.querySelector('.close2');
+
+
+trigger2.addEventListener('click', function() {
+    openModal2();
+})
+
+closeBtn2.addEventListener('click', function() {
+    closeModal2();
+})
+back2.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal2();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal2();
+
+    }
+
+})
+
+function openModal2() {
+    back2.classList.add('active');
 }
 
-function tan(form) {
-	form.display.value = Math.tan(form.display.value);
+
+function closeModal2() {
+    back2.classList.remove('active');
+}
+// ----------------------------------
+const trigger3 = document.querySelector('#trigger3');
+
+const back3 = document.querySelector('.back3');
+
+const closeBtn3 = document.querySelector('.close3');
+
+
+trigger3.addEventListener('click', function() {
+    openModal3();
+})
+
+closeBtn3.addEventListener('click', function() {
+    closeModal3();
+})
+back3.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal3();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal3();
+
+    }
+
+})
+
+function openModal3() {
+    back3.classList.add('active');
 }
 
-function sqrt(form) {
-	form.display.value = Math.sqrt(form.display.value);
+
+function closeModal3() {
+    back3.classList.remove('active');
+}
+// ----------------------------------
+const trigger4 = document.querySelector('#trigger4');
+
+const back4 = document.querySelector('.back4');
+
+const closeBtn4 = document.querySelector('.close4');
+
+
+trigger4.addEventListener('click', function() {
+    openModal4();
+})
+
+closeBtn4.addEventListener('click', function() {
+    closeModal4();
+})
+back4.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal4();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal4();
+
+    }
+
+})
+
+function openModal4() {
+    back4.classList.add('active');
 }
 
-function ln(form) {
-	form.display.value = Math.log(form.display.value);
+
+function closeModal4() {
+    back4.classList.remove('active');
+}
+// ----------------------------------
+const trigger5 = document.querySelector('#trigger5');
+
+const back5 = document.querySelector('.back5');
+
+const closeBtn5 = document.querySelector('.close5');
+
+
+trigger5.addEventListener('click', function() {
+    openModal5();
+})
+
+closeBtn5.addEventListener('click', function() {
+    closeModal5();
+})
+back5.addEventListener('click', function(e) {
+    if (e.target !== this) return;
+    closeModal5();
+})
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal5();
+
+    }
+
+})
+
+function openModal5() {
+    back5.classList.add('active');
 }
 
-function exp(form) {
-	form.display.value = Math.exp(form.display.value);
-}
 
-function deleteChar(input) {
-	input.value = input.value.substring(0, input.value.length - 1)
-}
-var val = 0.0;
-function percent(input) {
-  val = input.value;
-  input.value = input.value + "%";
-}
-
-function changeSign(input) {
-	if(input.value.substring(0, 1) == "-")
-		input.value = input.value.substring(1, input.value.length)
-	else
-		input.value = "-" + input.value
-}
-
-function compute(form) {
-  //if (val !== 0.0) {
-   // var percent = form.display.value;  
-   // percent = pcent.substring(percent.indexOf("%")+1);
-   // form.display.value = parseFloat(percent)/100 * val;
-    //val = 0.0;
- // } else 
-    form.display.value = eval(form.display.value);
-  }
-
-
-function square(form) {
-	form.display.value = eval(form.display.value) * eval(form.display.value)
-}
-
-function checkNum(str) {
-	for (var i = 0; i < str.length; i++) {
-		var ch = str.charAt(i);
-		if (ch < "0" || ch > "9") {
-			if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
-				&& ch != "(" && ch!= ")" && ch != "%") {
-				alert("invalid entry!")
-				return false
-				}
-			}
-		}
-		return true
+function closeModal5() {
+    back5.classList.remove('active');
 }
