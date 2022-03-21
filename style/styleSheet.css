@@ -22,7 +22,7 @@ body {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
