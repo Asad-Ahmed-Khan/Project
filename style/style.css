@@ -123,6 +123,7 @@ li :hover {
     color: white;
     font-family: Impact, Haettenschweiler, sans-serif;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn2:hover {

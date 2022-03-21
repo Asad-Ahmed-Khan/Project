@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.shoes {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.shoes button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.shoes button.close:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back.active .shoes {
+    transform: translateY(0px);
+}
+
+h1 {
+    color: rgb(40, 168, 168);
+}
+
+.checked {
+    color: orange;
+}
+
+.crd {
+    display: flex;
+    flex-flow: column nowrap;
+    Justify-content: center;
+}
+
+.but {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgb(40, 168, 168);
+    color: rgb(40, 168, 168);
+    background-color: white;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+}
+
+button[type=button]:hover {
+    background-color: rgb(40, 168, 168);
+    color: white;
+}
+
+
+/* --------------------------- */
+
+.back1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.beg {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.beg button.close1 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.beg button.close1:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back1.active .beg {
+    transform: translateY(0px);
+}
+
+
+/* ----------------------- */
+
+.back2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.watch {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.watch button.close2 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.watch button.close2:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back2.active .watch {
+    transform: translateY(0px);
+}
+
+
+/* ----------------------- */
+
+.back3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sandal {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.sandal button.close3 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sandal button.close3:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back3.active .sandal {
+    transform: translateY(0px);
+}
+
+
+/* ------------------- */
+
+.back4 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.shirt {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.shirt button.close4 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.shirt button.close4:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back4.active .shirt {
+    transform: translateY(0px);
+}
+
+
+/* ------------------------ */
+
+.back5 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.short {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.short button.close5 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.short button.close5:hover {
+    color: rgb(0, 92, 230);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back5.active .short {
+    transform: translateY(0px);
+}
