@@ -8,145 +8,297 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script language="javascript"></script>
+
+    <script src="./js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
-    <div class="back">
-        <div class="shoes">
-            <button class="close">&times;</button>
-
-            <div>
-                <img src="bra.png" style="width: 350px;" alt="sozes">
+    <div class="main-header">
+        <div class="wrap" style="display: flex; justify-content: space-around; ">
+            <div class="logo" style="color:rgb(40, 168, 168); font-family: 'Lobster Two', cursive;">
+                <h1>Asad khan</h1>>
             </div>
-            <div class="crd">
-                <h1>Branded Shoes</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <p><b>$65.00</b></p>
-                <p><b>NIKE's</b> athletic footwear products are designed primarily for specific athletic use, although a large percentage of the products are worn for casual or leisure purposes. We place considerable emphasis on high quality construction
-                    and innovative design for men, women and children</p>
-                <button class="but" type="button">Add to Cart</button>
+            <div class="search-box" style="margin-top:15px;">
+                <input type="text" name="search" placeholder="Search..">
             </div>
+            <div style="margin-top:-13px;">
+                <p style="font-size:28px; color:rgba(194, 191, 191, 0.897);"><i class="fa fa-shopping-basket" style="font-size:48px;color:rgb(40, 168, 168)"></i> $300.00
+                </p>
+            </div>
+
         </div>
     </div>
-    <div class="back1">
-        <div class="beg">
-            <button class="close1">&times;</button>
-
-            <div>
-                <img src="b.jpg" style="width: 350px;" alt="sozes">
+    <div class="flex-container">
+        <div class="header">
+            <div class="ul">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li class="List"><a href="">Sale</a> </li>
+                <li class="List"><a href="">Accessories</a></li>
+                <li class="List"><a href="">Stores</a></li>
+                <li class="List"><a href="">Shoes</a></li>
+                <li class="List"><a href="">About</a></li>
+                <li class="List"><a href="">Contact Us</a></li>
             </div>
-            <div class="crd">
-                <h1>Branded Beg</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="./assets/img1-modified.png" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>CHOWHIDE STANDARD CREW</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
                 </div>
-                <p><b>$44.00</b></p>
-                <p><b>Stylo's</b> A handbag is a small bag which a woman uses to carry things such as her money and keys in when she goes out.</p>
-                <button class="but" type="button">Add to Cart</button>
+
+
+            </div>
+            <div class="mySlides fade">
+
+
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="./assets/img.png" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>RECON MARINE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+
+
+                <div class="container" style="display: flex; justify-content:space-evenly; ">
+                    <div class="col-sm-4" style="margin-left:140px;">
+                        <img src="./assets/img2-modified.png" style="height: 300px;width: 300px;  ">
+                    </div>
+                    <div class="col-sm-2" style="margin-right:160px; color:white; width:30%">
+                        <h1>SEVEN NATION SALAMI</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam excepturi maiores incidunt? Dolorum, nisi. Possimus rem error temporibus at.</p>
+                        <button type="submit" class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div style="text-align:center; margin-top:-25px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-    </div>
-    <div class="back2">
-        <div class="watch">
-            <button class="close2">&times;</button>
+        <br>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="col-sm-2 " style=" width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="./assets/sh.jpg" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED SHOES</h2>
 
-            <div>
-                <img src="watch.png" style="width: 350px;" alt="sozes">
-            </div>
-            <div class="crd">
-                <h1>Branded Watch</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
                 </div>
-                <p><b>$250.00</b></p>
-                <p><b>Armani's</b> Watches from the Emporio Armani men's collection are the perfect embodiment of the brand's carefree, refined style..</p>
-                <button class="but" type="button">Add to Cart</button>
+            </div>
+
+            <div class="col-sm-2 " style="border-left:1px solid rgb(204, 201, 201); width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="./assets/img1-modified.png" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED T-SHIRTS</h2>
+
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 " style="border-left:1px solid rgb(204, 201, 201); width:30%">
+                <div class="card" style="display: flex;   padding-left: 20px;">
+                    <div>
+                        <img src="./assets/SO.jpg" style="max-height: 150px; width: 150px;">
+                    </div>
+                    <div style="margin-left:50px;">
+                        <h2>BRANDED SHORTS</h2>
+
+                        <button type="button" class="btn1">SHOP</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-12" style="background-color: rgb(40, 168, 168);color:white;">
+            <h1 style="padding:16px; margin-left: 100px;">
+                FEATURED PRODUCT
+            </h1>
+        </div>
+        <div class="col-sm-12" style="display: flex; justify-content: center;">
+            <div class="col-6" style="display: flex;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/sh.jpg" alt="Avatar" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>BRANDED SHOES</h1>
+                            <p>$65.00</p>
+                            <button type="button" id="trigger" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/b.jpg" alt="Avatar" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>BAGS</h1>
+                            <p>$44.00</p>
+                            <button type="button" id="trigger1" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/w.jpg" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Mens Watch</h1>
+                            <p>$250.00</p>
+                            <button type="button" id="trigger2" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-sm-12" style="display:flex; justify-content: center;">
+            <div class="col-sm-6">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/sen.jpg" alt="Avatar" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>LADIES SANDEL </h1>
+                            <p>$100.00</p>
+                            <button type="button" id="trigger3" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/img.png" alt="Avatar" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>T-SHIRTS</h1>
+                            <p>$80.00</p>
+                            <button type="button" id="trigger4" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/SO.jpg" style="width:200px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1></h1>
+                            <p>SHORTS</p>
+                            <p>$50.00</p>
+                            <button type="button" id="trigger" class="btn2">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="back3">
-        <div class="sandal">
-            <button class="close3">&times;</button>
+        <br>
+        <br>
+        <div class="footer">
+            <div class="col-sm-12" style="display: flex; justify-content: space-evenly; color:white;">
+                <div class="col-sm-2">
 
-            <div>
-                <img src="sen.png" style="width: 350px;" alt="sozes">
-            </div>
-            <div class="crd">
-                <h1>Branded Sandals</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <h3>FEATURED SALE</h3>
+                    <p>Alexis Hudson</p>
+                    <p>American Apparel</p>
+                    <p>Ben Sherman</p>
+                    <p>Big Buddha</p>
+                    <p>Channel</p>
+                    <p>Christian Audigier</p>
+                    <p>Coach</p>
+                    <p>Cole Haan</p>
+
                 </div>
-                <p><b>$250.00</b></p>
-                <p><b>Sandals's</b> Sandals are open or closed-toed strappy shoes worn by women.</p>
-                <button class="but" type="button">Add to Cart</button>
+                <div class="col-sm-2">
+                    <h3>MENS STORE</h3>
+                    <p>Alexis Hudson</p>
+                    <p>American Apparel</p>
+                    <p>Ben Sherman</p>
+                    <p>Big Buddha</p>
+                    <p>Channel</p>
+                    <p>Christian Audigier</p>
+                    <p>Coach</p>
+                    <p>Cole Haan</p>
+                </div>
+                <div class="col-sm-2">
+                    <h3>WOMEN STORES </h3>
+                    <p>Alexis Hudson</p>
+                    <p>American Apparel</p>
+                    <p>Ben Sherman</p>
+                    <p>Big Buddha</p>
+                    <p>Channel</p>
+                    <p>Christian Audigier</p>
+                    <p>Coach</p>
+                    <p>Cole Haan</p>
+                </div>
+                <div class="col-sm-2">
+                    <h3>QUICK LINKS</h3>
+                    <p>Alexis Hudson</p>
+                    <p>American Apparel</p>
+                    <p>Ben Sherman</p>
+                    <p>Big Buddha</p>
+                    <p>Channel</p>
+                    <p>Christian Audigier</p>
+                    <p>Coach</p>
+                    <p>Cole Haan</p>
+                </div>
             </div>
+
+        </div>
+        <div class="footer-main">
+            <span>© 2014 Aditii. All rights reserved | Template by  Asad Ahmed Khan</span>
         </div>
 
-    </div>
-    <div class="back4">
-        <div class="shirt">
-            <button class="close4">&times;</button>
 
-            <div>
-                <img src="shirt" style="width: 300px;" alt="sozes">
-            </div>
-            <div class="crd">
-                <h1>Branded T-Shirt</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <p><b>$80.00</b></p>
-                <p><b>Marine's</b>marine recon t shirt selection for the very best in unique or custom, handmade pieces from our shops.</p>
-                <button class="but" type="button">Add to Cart</button>
-            </div>
-        </div>
     </div>
-    <div class="back5">
-        <div class="short">
-            <button class="close5">&times;</button>
-
-            <div>
-                <img src="short.jpg" style="width: 300px;" alt="sozes">
-            </div>
-            <div class="crd">
-                <h1>Branded T-Shirt</h1>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <p><b>$50.00</b></p>
-                <p><b>Levi's</b> Tailored with just the right amount of stretch for easy movement, you'll be free to move across any dance floor.</p>
-                <button class="but" type="button">Add to Cart</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
