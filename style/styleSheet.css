@@ -3,6 +3,12 @@ body {
     padding: 0;
 }
 
+
+/* -------------login----------------- */
+
+
+/* ---------------------body-------------------- */
+
 .back {
     position: fixed;
     left: 0;
@@ -107,7 +113,7 @@ button[type=button]:hover {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
@@ -162,7 +168,7 @@ button[type=button]:hover {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
@@ -217,7 +223,7 @@ button[type=button]:hover {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
@@ -272,7 +278,7 @@ button[type=button]:hover {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
@@ -327,7 +333,7 @@ button[type=button]:hover {
     background-color: white;
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 420px;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px;
