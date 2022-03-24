@@ -41,7 +41,7 @@ p {
 }
 
 .signupform {
-    width: 50%;
+    width: 60%;
     height: 300px;
     display: flex;
     flex-flow: column nowrap;
@@ -118,4 +118,135 @@ button[type=button] {
 button[type=button]:hover {
     background-color: rgb(40, 168, 168);
     color: white;
+}
+
+
+/* Mobile devices */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .signupage {
+        width: 100%;
+        flex-flow: column nowrap;
+        /* align-items: center; */
+        align-content: center;
+    }
+    .signupdescrip {
+        width: 100%;
+    }
+    .signup {
+        width: 100%;
+        margin: 0;
+    }
+    .signupform {
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
+}
+
+
+/* Tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        width: 100%;
+        text-align: center;
+    }
+    .signupage {
+        width: 100%;
+        flex-flow: column nowrap;
+        /* align-items: center; */
+        align-content: center;
+    }
+    .signupdescrip {
+        width: 100%;
+    }
+    .signup {
+        width: 100%;
+        margin: 0;
+    }
+    .signupform {
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
+}
+
+
+/* laptops Desktops*/
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 55px;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+    .signupage {
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .signup {
+        width: 50%;
+        margin-top: 70px;
+    }
+    .signupform {
+        width: 60%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
 }

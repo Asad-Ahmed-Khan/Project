@@ -18,6 +18,8 @@ h1 {
 p {
     font-size: 20px;
     color: rgb(23, 126, 126);
+    margin-top: 0;
+    padding: 0;
 }
 
 .loginpage {
@@ -29,7 +31,6 @@ p {
 
 .logindescrip {
     width: 50%;
-    margin-top: 120px;
     text-align: center;
     margin-top: 30px;
 }
@@ -41,7 +42,7 @@ p {
 }
 
 .loginform {
-    width: 50%;
+    width: 60%;
     height: 300px;
     display: flex;
     flex-flow: column nowrap;
@@ -105,4 +106,135 @@ button[type=button] {
 button[type=button]:hover {
     background-color: rgb(40, 168, 168);
     color: white;
+}
+
+
+/* Mobile devices */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .loginpage {
+        width: 100%;
+        flex-flow: column nowrap;
+        /* align-items: center; */
+        align-content: center;
+    }
+    .logindescrip {
+        width: 100%;
+    }
+    .login {
+        width: 100%;
+        margin: 0;
+    }
+    .loginform {
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
+}
+
+
+/* Tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        width: 100%;
+        text-align: center;
+    }
+    .loginpage {
+        width: 100%;
+        flex-flow: column nowrap;
+        /* align-items: center; */
+        align-content: center;
+    }
+    .logindescrip {
+        width: 100%;
+    }
+    .login {
+        width: 100%;
+        margin: 0;
+    }
+    .loginform {
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
+}
+
+
+/* laptops Desktops*/
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    h1 {
+        font-size: 55px;
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+    .loginpage {
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .login {
+        width: 50%;
+        margin-top: 70px;
+    }
+    .loginform {
+        width: 60%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    button[type=submit] {
+        width: 90%;
+    }
 }
