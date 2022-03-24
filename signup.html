@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/stylesignuo.css">
+</head>
+
+<body>
+
+    <div class="signupage">
+
+        <div class="signupdescrip">
+            <h1>Asad khan</h1>
+            <p><b>Asad Khan's</b> helps you search best product for you.</p>
+        </div>
+        <div class="signup">
+            <form class="signupform" action="index.html">
+                <div>
+                    <input class="inp" type="text" name="name" placeholder="Name" autocomplete="off" id="name" onblur="Name(this.id)" required/><br>
+                </div>
+                <div>
+                    <input class="inp" type="text" name="last" placeholder="Last" autocomplete="off" id="last" onblur="Last(this.id)" required/><br>
+                </div>
+                <div>
+                    <input class="inp" type="email" name="email" placeholder="Email" pattern='[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{3}' id="email" onblur="Email(this.id)" required/>
+                </div>
+                <div>
+                    <input class="inp " type="password" name="pass" placeholder="Enter 8 digit Password" pattern='[a-zA-Z0-9._]{8}' max="8 " id="pass" onblur="Pass(this.id)" required/>
+                </div>
+                <div class="gender">
+                    <input name="gender" type="radio" value="Male" required><span><b>Male</b></span></input>
+                    <input name="gender" type="radio" value="Female" required><span><b>Female</b></span></input>
+                    <span id="gender1"></span>
+                </div>
+                <div>
+                    <button type="submit" onclick="getData()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <script src="./js/signup.js"></script>
+    </div>
+
+</body>
+
+</html>
