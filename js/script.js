@@ -241,3 +241,12 @@ function openModal5() {
 function closeModal5() {
     back5.classList.remove('active');
 }
+//js toggle
+
+$(document).ready(function() {
+    $("#morebtn").click(function() {
+
+        $("#tago").fadeToggle("slow");
+
+    });
+});

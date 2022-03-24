@@ -346,10 +346,138 @@ li :hover {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+
+/* *******start********* */
+
+.main_bg {
+    background: #ffffff;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.main {
+    padding: 2%;
+}
+
+.contact {
+    margin: 2% 0;
+    display: block;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #777777;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.map {
+    margin: 2% 2% 2% 0;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form div {
+    padding: 5px 0;
+}
+
+.contact-form span label {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #777777;
+    display: block;
+    font-size: 0.8725em;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    color: rgba(85, 81, 81, 0.84);
+    padding: 8px;
+    display: block;
+    width: 96.3333%;
+    outline: none;
+    -webkit-appearance: none;
+    text-transform: capitalize;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #3CC395;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 38px;
+    font-size: 0.875em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.jumbotrone {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 168, 168);
+    padding: 16px;
+    height: 350px;
+    margin: -1px;
+}
+
+#morebtn {
+    background-color: rgb(43, 134, 134);
+    color: white;
+    padding: 16px;
+    border: none;
+    width: 85%;
+    margin-bottom: 2px;
+    font-size: 22px;
+}
+
+.moreinfo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#tago {
+    /* border: 2px solid #3CC395; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    opacity: 0.7;
+    padding: 16px;
+    padding-top: 15px;
+    background-color: rgb(40, 168, 168);
+    margin-bottom: 50px;
+    color: white;
+    height: 400px;
 }
